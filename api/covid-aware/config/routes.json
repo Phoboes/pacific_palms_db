@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/covid-aware",
+      "handler": "covid-aware.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/covid-aware",
+      "handler": "covid-aware.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/covid-aware",
+      "handler": "covid-aware.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

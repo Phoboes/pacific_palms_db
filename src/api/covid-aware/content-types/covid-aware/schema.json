@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "covid_awares",
+  "info": {
+    "singularName": "covid-aware",
+    "pluralName": "covid-awares",
+    "displayName": "covidAware",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "pageText": {
+      "type": "richtext"
+    },
+    "signatureImage": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

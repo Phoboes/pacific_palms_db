@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "functions",
+  "info": {
+    "name": "Functions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pageText": {
+      "type": "richtext"
+    },
+    "functionsImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

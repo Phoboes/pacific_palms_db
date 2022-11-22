@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_image_categories",
+  "info": {
+    "name": "GalleryImageCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "gallery_images": {
+      "via": "gallery_image_categories",
+      "collection": "gallery-images",
+      "dominant": true
+    }
+  }
+}

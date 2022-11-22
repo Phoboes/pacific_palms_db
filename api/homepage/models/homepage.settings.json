@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero",
+      "required": true
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about"
+    },
+    "rooms": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.rooms"
+    },
+    "services": {
+      "collection": "services"
+    },
+    "testimonials": {
+      "collection": "testimonials"
+    },
+    "testimonialsBackground": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "galleryImages": {
+      "collection": "gallery-images"
+    }
+  }
+}

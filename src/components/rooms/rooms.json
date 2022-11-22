@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_rooms_rooms",
+  "info": {
+    "displayName": "rooms"
+  },
+  "options": {},
+  "attributes": {
+    "rooms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::room.room"
+    }
+  }
+}

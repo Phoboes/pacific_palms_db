@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_images",
+  "info": {
+    "name": "GalleryImages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "gallery_image_categories": {
+      "collection": "gallery-image-category",
+      "via": "gallery_images"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}
