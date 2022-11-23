@@ -21,35 +21,49 @@
       "component": "rooms.rooms"
     },
     "LandingImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "About": {
       "type": "string"
     },
     "RoomsBackdrop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "RoomsBackdropMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "TestimonialsBackground": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "GalleryImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery-images.gallery-images"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonials.testimonials"
     }
   }
 }
