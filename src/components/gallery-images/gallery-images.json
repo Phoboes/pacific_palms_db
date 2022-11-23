@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_gallery_images_gallery_images",
+  "info": {
+    "displayName": "GalleryImages"
+  },
+  "options": {},
+  "attributes": {
+    "gallery_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery-image.gallery-image"
+    }
+  }
+}
