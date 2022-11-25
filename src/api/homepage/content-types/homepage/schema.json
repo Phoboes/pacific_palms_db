@@ -54,16 +54,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "GalleryImages": {
-      "type": "component",
-      "repeatable": true,
-      "component": "gallery-images.gallery-images"
-    },
-    "Testimonials": {
-      "type": "component",
-      "repeatable": true,
-      "component": "testimonials.testimonials"
     }
   }
 }
