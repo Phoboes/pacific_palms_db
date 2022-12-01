@@ -29,7 +29,7 @@
       ]
     },
     "About": {
-      "type": "string"
+      "type": "text"
     },
     "RoomsBackdrop": {
       "type": "media",
