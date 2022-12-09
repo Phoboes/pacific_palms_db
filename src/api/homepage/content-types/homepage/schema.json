@@ -15,11 +15,6 @@
     "MetaTitle": {
       "type": "string"
     },
-    "rooms": {
-      "type": "component",
-      "repeatable": true,
-      "component": "rooms.rooms"
-    },
     "LandingImages": {
       "type": "media",
       "multiple": true,
