@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_image_categories",
+  "info": {
+    "singularName": "gallery-image-category",
+    "pluralName": "gallery-image-categories",
+    "displayName": "GalleryImageCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "gallery_images": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::gallery-image.gallery-image",
+      "inversedBy": "gallery_image_categories"
+    }
+  }
+}
