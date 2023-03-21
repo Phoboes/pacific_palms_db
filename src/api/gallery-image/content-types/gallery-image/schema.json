@@ -4,33 +4,26 @@
   "info": {
     "singularName": "gallery-image",
     "pluralName": "gallery-images",
-    "displayName": "GalleryImages",
-    "description": ""
+    "displayName": "GalleryImages"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string"
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     },
     "caption": {
       "type": "string"
-    },
-    "gallery_image_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::gallery-image-category.gallery-image-category",
-      "inversedBy": "gallery_images"
     }
   }
 }
